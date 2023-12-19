@@ -69,12 +69,12 @@
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |      |  !  |  @  |  {  |  }  |  \  |   |  |  |  _  |  <  |  >  |     |      |
-// |      |  $  |  $  |  (  |  )  |  `  |   | =/+ | -/_ |  /  |  *  |  %  |      |
+// |      |  $  |  $  |  (  |  )  |  `  |   |  +  | -/_ |  /  |  *  |  %  |      |
 // |      |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  ,  |  .  |     |      |
 //                    |     |  :  |  =  |   |     |     |     |
                         bindings = <
    &trans &kp HASH &kp AT &kp LBRC &kp RBRC &kp BSLH           &kp PIPE &kp UNDER &kp LT &kp GT &trans &trans
-   &trans &kp EXCL &kp DLLR &kp LPAR &kp RPAR &kp GRAVE        &kp EQUAL &kp MINUS &kp KP_DIVIDE &kp KP_MULTIPLY &kp PERCENT &trans
+   &trans &kp EXCL &kp DLLR &kp LPAR &kp RPAR &kp GRAVE        &kp PLUS &kp MINUS &kp KP_DIVIDE &kp KP_MULTIPLY &kp PERCENT &trans
    &trans &kp PERCENT &kp CARET &kp LBKT &kp RBKT &kp TILDE    &kp AMPS &kp KP_EQUAL &kp COMMA &kp DOT &trans &trans
                         &trans &kp COLON &kp KP_EQUAL             &trans &trans &trans
                         >;
