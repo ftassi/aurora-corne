@@ -38,6 +38,7 @@
 
                 default_layer {
                         label = "QWERTY";
+// TODO CAPWS potrebbe essere shift on tap / CAPSW on hold?                        
 // -----------------------------------------------------------------------------------------
 // | Alt/TAB |  A  |  W  |  E  |  R  |  T  |   |  A  |  U   |  I  |  O  |  P  | Alt/\|  |
 // | CTRL/BS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
@@ -52,6 +53,7 @@
                 };
                 lower_layer {
                         label = "NUMBER";
+// TODO Aggiungere uno shift di sinistra in questo layer?                        
 // -----------------------------------------------------------------------------------------
 // |      |  1  |  2  |  3  |  4  |  5  |   | BT1 | BT2 | BT3 | BT4 |BT CLR|VOL up   |
 // |      |  6  |  7  |  8  |  9  |  0  |   |Left |Down |  Up |Right|      |VOL down |
