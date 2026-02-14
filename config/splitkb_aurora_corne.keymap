@@ -13,6 +13,13 @@
 };
 
 / {
+        macros {
+            dead_grave: dead_grave {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_press &kp RALT>, <&macro_tap &kp GRAVE>, <&macro_release &kp RALT>;
+            };
+        };
         behaviors {
             gqt: global-quick-tap {
                 compatible = "zmk,behavior-hold-tap";
@@ -35,12 +42,12 @@
 // | Alt/TAB |  A  |  W  |  E  |  R  |  T  |   |  A  |  U   |  I  |  O  |  P  | Alt/\|  |
 // | CTRL/BS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
 // |  CAPSW  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT/-_|
-//                 | GUI | ESC/LWR |SPC/SFT|   | ENT |RSE/TAB| GUI |
+//                 |DEAD`| ESC/LWR |SPC/SFT|   | ENT |RSE/TAB| GUI |
                         bindings = <
    &gqt LALT ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &gqt RALT BSLH
    &gqt LCTRL BSPC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
    &caps_word &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &gqt RSHIFT MINUS
-                 &sk LGUI &lt NUM ESC &gqt LSHIFT SPACE   &kp RET &lt SYM TAB &sk RGUI
+                 &dead_grave &lt NUM ESC &gqt LSHIFT SPACE   &kp RET &lt SYM TAB &kp RGUI
                         >;
                 };
                 lower_layer {
