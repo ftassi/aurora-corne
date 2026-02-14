@@ -24,14 +24,6 @@
                 global-quick-tap;
                 bindings= <&kp>, <&kp>;
             };
-            bht: balanced_hold_tap {
-                compatible = "zmk,behavior-hold-tap";
-                label = "BALANCED HOLD TAP";
-                #binding-cells = <2>;
-                flavor = "balanced";
-                tapping-term-ms = <200>;
-                bindings = <&kp>, <&kp>;
-            };
         };
         keymap {
                 compatible = "zmk,keymap";
