@@ -40,12 +40,12 @@
 // TODO CAPWS potrebbe essere shift on tap / CAPSW on hold?                        
 // -----------------------------------------------------------------------------------------
 // | Alt/TAB |  A  |  W  |  E  |  R  |  T  |   |  A  |  U   |  I  |  O  |  P  | Alt/\|  |
-// | CTRL/BS |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
+// |  CTRL   |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
 // |  CAPSW  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT/-_|
 //                 |DEAD`| ESC/LWR |SPC/SFT|   | ENT |RSE/TAB| GUI |
                         bindings = <
    &gqt LALT ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &gqt RALT BSLH
-   &gqt LCTRL BSPC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
    &caps_word &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &gqt RSHIFT MINUS
                  &dead_grave &lt NUM ESC &gqt LSHIFT SPACE   &kp RET &lt SYM TAB &kp RGUI
                         >;
@@ -54,12 +54,12 @@
                         label = "NUMBER";
 // TODO Aggiungere uno shift di sinistra in questo layer?                        
 // -----------------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |   | BT1 | BT2 | BT3 | BT4 |BT CLR|VOL up   |
+// |  BS  |  1  |  2  |  3  |  4  |  5  |   | BT1 | BT2 | BT3 | BT4 |BT CLR|  DEL    |
 // |      |  6  |  7  |  8  |  9  |  0  |   |Left |Down |  Up |Right|      |VOL down |
 // |      |     |     |     |     |     |   |HOME |PGDN |PGUP | END |      |Mute     |
 //                    |     |     |     |   |  .  | ,   |     |
                         bindings = <
-   &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &kp C_VOL_UP 
+   &kp BSPC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &kp DEL
    &trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp C_VOL_DN 
    &trans &trans &trans &trans &trans &trans      &kp HOME &kp PG_DN &kp PG_UP &kp END &trans  &kp C_MUTE  
                               &trans &trans &trans     &kp DOT &kp COMMA &trans 
@@ -69,12 +69,12 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |      |  #  |  @  |  {  |  }  |  \  |   |  |  |  _  |  <  |  >  |     |      |
+// |  BS  |  #  |  @  |  {  |  }  |  \  |   |  |  |  _  |  <  |  >  |     |  DEL |
 // |      |  !  |  $  |  (  |  )  |  `  |   |  +  | -/_ |  /  |  *  |  %  |      |
 // |      |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  ,  |  .  |     |      |
 //                    |     |  :  |  =  |   |     |     |     |
                         bindings = <
-   &trans &kp HASH &kp AT &kp LBRC &kp RBRC &kp BSLH           &kp PIPE &kp UNDER &kp LT &kp GT &trans &trans
+   &kp BSPC &kp HASH &kp AT &kp LBRC &kp RBRC &kp BSLH           &kp PIPE &kp UNDER &kp LT &kp GT &trans &kp DEL
    &trans &kp EXCL &kp DLLR &kp LPAR &kp RPAR &kp GRAVE        &kp PLUS &kp MINUS &kp KP_DIVIDE &kp KP_MULTIPLY &kp PERCENT &trans
    &trans &kp PERCENT &kp CARET &kp LBKT &kp RBKT &kp TILDE    &kp AMPS &kp KP_EQUAL &kp COMMA &kp DOT &trans &trans
                         &trans &kp COLON &kp KP_EQUAL             &trans &trans &trans
