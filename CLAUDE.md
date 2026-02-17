@@ -11,7 +11,7 @@
 
 ### Layer 0 — QWERTY (default)
 - Home row: plain keys (no home row mods)
-- Left outer column: Alt (plain), BS/Ctrl (hpt), caps_word
+- Left outer column: Alt (plain, no tap), BS/Ctrl (hpt), caps_word
 - Right outer column: Alt/\ (gqt), Ctrl/' (gqt), Shift/- (gqt)
 - Thumbs: `&dead_grave` | `&lt NUM ESC` | `&gqt LSHIFT SPACE` || `&kp RET` | `&lt SYM TAB` | `&sk RGUI`
 - BS on base layer as tap of left Ctrl (hpt); DEL only on NUM/SYM layers (top-right outer)
@@ -60,11 +60,13 @@
 - Tap then tap a vowel → à, è, ì, ò, ù
 - On left thumb outer position for quick access
 
-### Combo: `combo_tmux`
-- Keys: positions 12 (BS/CTRL) + 38 (SPC/SFT)
-- Timeout: 50ms (chord-style)
-- Output: `Ctrl+Space` — tmux prefix
-- Takes priority over hold-tap on both keys
+### Combos
+- `combo_tmux`: positions 12+38 (BS/CTRL + SPC/SFT), 50ms → `Ctrl+Space` (tmux prefix)
+- `combo_minus`: positions 16+19 (F+J), 35ms → `-`
+- `combo_under`: positions 15+20 (D+K), 35ms → `_`
+- `combo_slash`: positions 14+21 (S+L), 35ms → `/`
+- `combo_tilde`: positions 13+22 (A+;), 35ms → `~`
+- Cross-hand combos use mirror home row positions for ergonomic chord access to frequent symbols
 
 ## Key design decisions
 - Modifiers on outer columns via hold-tap, NOT home row mods
@@ -96,3 +98,4 @@ build.yaml                     — CI matrix (left + right shields + settings_re
 - Keymap uses `&trans` extensively on non-base layers to inherit base layer modifiers
 - Board identifier is `nice_nano//zmk` (HWMv2 format, v2 is default revision)
 - settings_reset shield included in build for BLE bond clearing after firmware upgrades
+- **When modifying the layout**, always keep in sync: keymap comments, `cheat/.local/bin/kb` script, and this CLAUDE.md

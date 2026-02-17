@@ -14,7 +14,9 @@ LAYERS=(
                   │DG\`│ESC│SPC│       │RET│TAB│GUI│
                   │   │NUM│SFT│       │   │SYM│ s │
                   └───┴───┴───┘       └───┴───┴───┘
-  Combo: BS/Ctrl + SPC/SFT (50ms) → Ctrl+Space (tmux)"
+  Combos:
+    BS/Ctrl + SPC/SFT (50ms) → Ctrl+Space (tmux)
+    F+J → -    D+K → _    S+L → /    A+; → ~  (35ms)"
 
 "LAYER 1 — NUMBER (hold ESC/NUM)
 

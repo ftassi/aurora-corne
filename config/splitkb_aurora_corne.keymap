@@ -48,6 +48,26 @@
                 key-positions = <12 38>;
                 bindings = <&kp LC(SPACE)>;
             };
+            combo_minus {
+                timeout-ms = <35>;
+                key-positions = <16 19>;
+                bindings = <&kp MINUS>;
+            };
+            combo_under {
+                timeout-ms = <35>;
+                key-positions = <15 20>;
+                bindings = <&kp UNDER>;
+            };
+            combo_slash {
+                timeout-ms = <35>;
+                key-positions = <14 21>;
+                bindings = <&kp FSLH>;
+            };
+            combo_tilde {
+                timeout-ms = <35>;
+                key-positions = <13 22>;
+                bindings = <&kp TILDE>;
+            };
         };
         conditional_layers {
             compatible = "zmk,conditional-layers";
@@ -65,6 +85,7 @@
 // |   Alt   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Alt/\   |
 // | BS/CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
 // |  CAPSW  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT/- |
+// Cross-hand combos (35ms): F+J → -  D+K → _  S+L → /  A+; → ~
 //                 |DEAD`| ESC/NUM |SPC/SFT|   | ENT |TAB/SYM| sGUI |
                         bindings = <
    &kp LALT &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &gqt RALT BSLH
