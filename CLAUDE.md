@@ -11,7 +11,7 @@
 
 ### Layer 0 — QWERTY (default)
 - Home row: plain keys (no home row mods)
-- Left outer column: Alt/ESC (gqt), BS/Ctrl (hpt), caps_word
+- Left outer column: Alt (plain), BS/Ctrl (hpt), caps_word
 - Right outer column: Alt/\ (gqt), Ctrl/' (gqt), Shift/- (gqt)
 - Thumbs: `&dead_grave` | `&lt NUM ESC` | `&gqt LSHIFT SPACE` || `&kp RET` | `&lt SYM TAB` | `&sk RGUI`
 - BS on base layer as tap of left Ctrl (hpt); DEL only on NUM/SYM layers (top-right outer)
