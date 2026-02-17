@@ -94,12 +94,12 @@
 // |      |  #  |  @  |  {  |  }  |  \  |   |  |  |  _  |  <  |  >  |     |  DEL |
 // |      |  !  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |      |
 // |      |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  ,  |  .  |  /  |SHFT/-|
-//                    |     |     |  =  |   |     |     |     |
+//                    |     |  :  |  =  |   |     |     |     |
                         bindings = <
    &trans &kp HASH &kp AT &kp LBRC &kp RBRC &kp BSLH           &kp PIPE &kp UNDER &kp LT &kp GT &trans &kp DEL
    &trans &kp EXCL &kp DLLR &kp LPAR &kp RPAR &kp GRAVE        &kp PLUS &kp MINUS &kp KP_DIVIDE &kp KP_MULTIPLY &kp PERCENT &trans
    &trans &kp PERCENT &kp CARET &kp LBKT &kp RBKT &kp TILDE    &kp AMPS &kp KP_EQUAL &trans &trans &trans &trans
-                        &trans &trans &kp KP_EQUAL             &trans &trans &trans
+                        &trans &lt NUM COLON &kp KP_EQUAL             &trans &trans &trans
                         >;
                 };
 
