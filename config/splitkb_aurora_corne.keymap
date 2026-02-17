@@ -32,6 +32,14 @@
                 global-quick-tap;
                 bindings= <&kp>, <&kp>;
             };
+            hpt: hold-preferred-tap {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <200>;
+                quick-tap-ms = <150>;
+                bindings = <&kp>, <&kp>;
+            };
         };
         combos {
             compatible = "zmk,combos";
@@ -55,12 +63,12 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // | Alt/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Alt/\   |
-// |  CTRL   |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
+// | BS/CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
 // |  CAPSW  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT/- |
 //                 |DEAD`| ESC/NUM |SPC/SFT|   | ENT |TAB/SYM| GUI |
                         bindings = <
    &gqt LALT ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &gqt RALT BSLH
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
+   &hpt LCTRL BSPC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
    &caps_word &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &gqt RSHIFT MINUS
                  &dead_grave &lt NUM ESC &gqt LSHIFT SPACE   &kp RET &lt SYM TAB &sk RGUI
                         >;
