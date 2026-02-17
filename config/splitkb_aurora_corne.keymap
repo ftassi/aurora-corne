@@ -65,7 +65,7 @@
 // | Alt/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Alt/\   |
 // | BS/CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | CTRL/'  |
 // |  CAPSW  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT/- |
-//                 |DEAD`| ESC/NUM |SPC/SFT|   | ENT |TAB/SYM| GUI |
+//                 |DEAD`| ESC/NUM |SPC/SFT|   | ENT |TAB/SYM| sGUI |
                         bindings = <
    &gqt LALT ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &gqt RALT BSLH
    &hpt LCTRL BSPC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &gqt RCTRL SINGLE_QUOTE
@@ -92,7 +92,7 @@
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |      |  #  |  @  |  {  |  }  |  \  |   |  |  |  _  |  <  |  >  |     |  DEL |
-// |      |  !  |  $  |  (  |  )  |  `  |   |  +  | -/_ |  /  |  *  |  %  |      |
+// |      |  !  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |      |
 // |      |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  ,  |  .  |  /  |SHFT/-|
 //                    |     |     |  =  |   |     |     |     |
                         bindings = <
