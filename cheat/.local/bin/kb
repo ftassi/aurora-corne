@@ -28,7 +28,7 @@ LAYERS=(
 │(CAPSW)  │   │   │   │   │   │       │HOM│PGD│PGU│END│   │         │
 └─────────┴───┴───┼───┼───┼───┤       ├───┼───┼───┼───┴───┴─────────┘
                   │DG\`│***│SPC│       │ . │ : │ , │
-                  │   │NUM│SFT│       │   │SYM│   │
+                  │   │NUM│SFT│       │SFT│SYM│   │
                   └───┴───┴───┘       └───┴───┴───┘"
 
 "LAYER 2 — SYMBOL (hold TAB/SYM)

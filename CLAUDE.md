@@ -23,7 +23,7 @@
 - Right mid: arrow navigation (←↓↑→, mirrors vim HJKL)
 - Right bottom: Home/PgDn/PgUp/End (symmetric with arrows above)
 - Top outer: DEL (right only, left inherits Alt/ESC via &trans)
-- Right thumbs: `.` | `:` (lt SYM, for CTL layer access) | `,` — optimized for IP/port entry
+- Right thumbs: `.`/Shift (gqt) | `:` (lt SYM, for CTL layer access) | `,` — optimized for IP/port entry and Shift+arrow selection
 
 ### Layer 2 — SYMBOL (activated by right thumb hold)
 - Left: brackets/braces paired by row (`{}`, `()`, `[]`)
